@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal RPL SMKN 9 Medan</title>
+    <link rel="stylesheet" href="Tugas_pak_ardi.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <a href="#beranda" class="logo">
+        <img src="logo-sekolah.jpg" alt="Logo SMKN 9">
+        <div>
+            <h2>RPL SMKN 9 MEDAN</h2>
+            <p>Rekayasa Perangkat Lunak</p>
+        </div>
+    </a>
+
+    <nav class="nav-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#kategori">Kategori</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#galeri">Galeri</a>
+        <a href="#informasi">Informasi</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="beranda">
+    <div class="hero-content">
+        <span class="label">PORTAL JURUSAN</span>
+        <h1>Selamat Datang di<br>RPL SMKN 9 Medan</h1>
+        <p>
+            Mengenal dunia teknologi, pemrograman,
+            desain, dan jaringan komputer bersama
+            jurusan Rekayasa Perangkat Lunak.
+        </p>
+        <a href="#kategori" class="btn-primary">
+            Jelajahi Sekarang
+        </a>
+    </div>
+</section>
+
+<!-- PROFIL -->
+<section class="tentang" id="profil">
+    <div class="tentang-image">
+        <img src="RPL.jpg" alt="Jurusan RPL">
+    </div>
+
+    <div class="tentang-content">
+        <span class="label">TENTANG KAMI</span>
+        <h2>Rekayasa Perangkat Lunak</h2>
+
+        <p>
+            Rekayasa Perangkat Lunak merupakan bidang
+            keahlian yang mempelajari proses pengembangan
+            perangkat lunak, mulai dari perencanaan,
+            desain, pemrograman hingga pengujian aplikasi.
+        </p>
+
+        <p>
+            Siswa RPL dibekali kemampuan untuk memahami
+            teknologi, menyelesaikan permasalahan,
+            mengembangkan aplikasi dan menciptakan
+            solusi digital.
+        </p>
+
+        <button class="btn-primary"
+            onclick="bukaModal('profil')">
+            Selengkapnya
+        </button>
+    </div>
+</section>
+
+<!-- KOMPETENSI -->
+<section class="section kompetensi">
+    <div class="section-title">
+        <span>KOMPETENSI</span>
+        <h2>Apa yang Dipelajari di RPL?</h2>
+        <p>Berbagai kemampuan yang dikembangkan dalam pembelajaran.</p>
+    </div>
+
+    <div class="kompetensi-grid">
+        <div class="info-card">
+            <h3>Logika Pemrograman</h3>
+            <p>Memahami algoritma dan cara berpikir sistematis.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Pengembangan Website</h3>
+            <p>Membuat website menggunakan HTML, CSS dan JavaScript.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Basis Data</h3>
+            <p>Mengelola data menggunakan sistem database.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Desain Antarmuka</h3>
+            <p>Membuat tampilan aplikasi yang menarik dan mudah digunakan.</p>
+        </div>
+    </div>
+</section>
+
+<!-- KATEGORI -->
+<section class="section" id="kategori">
+    <div class="section-title">
+        <span>JELAJAHI</span>
+        <h2>Kategori Pembelajaran</h2>
+        <p>Klik gambar atau tombol untuk melihat informasi lengkap.</p>
+    </div>
+
+    <div class="kategori-grid">
+
+        <!-- PEMROGRAMAN -->
+        <article class="kategori-card">
+            <img src="pemrograman.jpg" alt="Pemrograman">
+            <div class="kategori-info">
+                <h3>Pemrograman</h3>
+                <p>Belajar membuat aplikasi dan website.</p>
+                <button onclick="bukaModal('pemrograman')">
+                    Lihat Informasi +
+                </button>
+            </div>
+        </article>
+
+        <!-- DESAIN -->
+        <article class="kategori-card">
+            <img src="Desain.jpg" alt="Desain">
+            <div class="kategori-info">
+                <h3>Desain</h3>
+                <p>Mengembangkan kreativitas digital.</p>
+                <button onclick="bukaModal('desain')">
+                    Lihat Informasi +
+                </button>
+            </div>
+        </article>
+
+        <!-- JARINGAN -->
+        <article class="kategori-card">
+            <img src="Jaringan.jpg" alt="Jaringan">
+            <div class="kategori-info">
+                <h3>Jaringan</h3>
+                <p>Mengenal jaringan dan koneksi komputer.</p>
+                <button onclick="bukaModal('jaringan')">
+                    Lihat Informasi +
+                </button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- PROYEK SISWA -->
+<section class="section proyek" id="proyek">
+    <div class="section-title">
+        <span>KREATIVITAS SISWA</span>
+        <h2>Proyek dan Karya Siswa</h2>
+        <p>Contoh pengembangan proyek dalam bidang teknologi.</p>
+    </div>
+
+    <div class="proyek-grid">
+
+        <article class="proyek-card">
+            <img src="Aplikasi Inventaris QR.jpg"
+                 alt="Aplikasi Inventaris QR">
+            <div class="proyek-info">
+                <h3>Aplikasi Inventaris QR</h3>
+                <p>Sistem peminjaman alat laboratorium berbasis QR Code.</p>
+                <button onclick="bukaModal('inventaris')">
+                    Lihat Detail
+                </button>
+            </div>
+        </article>
+
+        <article class="proyek-card">
+            <img src="Portal CBT Online.jpg"
+                 alt="Portal CBT Online">
+            <div class="proyek-info">
+                <h3>Portal CBT Online</h3>
+                <p>Platform ujian berbasis komputer yang responsif.</p>
+                <button onclick="bukaModal('cbt')">
+                    Lihat Detail
+                </button>
+            </div>
+        </article>
+
+        <article class="proyek-card">
+            <img src="E-Katalog Produk PKK.png"
+                 alt="E-Katalog Produk PKK">
+            <div class="proyek-info">
+                <h3>E-Katalog Produk PKK</h3>
+                <p>Etalase digital untuk menampilkan produk siswa.</p>
+                <button onclick="bukaModal('katalog')">
+                    Lihat Detail
+                </button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- GALERI -->
+<section class="section" id="galeri">
+    <div class="section-title">
+        <span>DOKUMENTASI</span>
+        <h2>Galeri Kegiatan</h2>
+        <p>Dokumentasi kegiatan pembelajaran dan kreativitas siswa.</p>
+    </div>
+
+    <div class="galeri-grid">
+        <img src="pemrograman.jpg" alt="Kegiatan pemrograman"
+             onclick="lihatGambar(this)">
+        <img src="Desain.jpg" alt="Kegiatan desain"
+             onclick="lihatGambar(this)">
+        <img src="Jaringan.jpg" alt="Kegiatan jaringan"
+             onclick="lihatGambar(this)">
+        <img src="RPL.jpg" alt="Kegiatan jurusan RPL"
+             onclick="lihatGambar(this)">
+    </div>
+</section>
+
+<!-- INFORMASI -->
+<section class="section informasi" id="informasi">
+    <div class="section-title">
+        <span>INFORMASI</span>
+        <h2>Informasi Jurusan</h2>
+        <p>Pilih informasi untuk mengetahui lebih lanjut.</p>
+    </div>
+
+    <div class="informasi-grid">
+
+        <div class="info-card">
+            <h3>Jadwal Praktikum</h3>
+            <p>Informasi kegiatan praktik laboratorium.</p>
+            <button onclick="bukaModal('praktikum')">Baca Selengkapnya</button>
+        </div>
+
+        <div class="info-card">
+            <h3>Modul Pembelajaran</h3>
+            <p>Materi belajar untuk siswa RPL.</p>
+            <button onclick="bukaModal('modul')">Baca Selengkapnya</button>
+        </div>
+
+        <div class="info-card">
+            <h3>Informasi PKL</h3>
+            <p>Informasi praktik kerja lapangan siswa.</p>
+            <button onclick="bukaModal('pkl')">Baca Selengkapnya</button>
+        </div>
+
+        <div class="info-card">
+            <h3>Uji Kompetensi LSP</h3>
+            <p>Informasi persiapan uji kompetensi.</p>
+            <button onclick="bukaModal('lsp')">Baca Selengkapnya</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- MODAL INFORMASI -->
+<div class="modal" id="modal">
+    <div class="modal-box">
+        <button class="modal-close" onclick="tutupModal()">×</button>
+        <div id="modalIsi"></div>
+    </div>
+</div>
+
+<!-- MODAL GAMBAR -->
+<div class="image-modal" id="imageModal"
+     onclick="this.style.display='none'">
+    <span>×</span>
+    <img id="gambarBesar" alt="Tampilan gambar besar">
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <h3>RPL SMKN 9 MEDAN</h3>
+    <p>Membangun kreativitas dan kemampuan di bidang teknologi informasi.</p>
+
+    <div class="footer-line"></div>
+
+    <p class="copyright">
+        &copy; 2026 Jurusan RPL SMK Negeri 9 Medan.
+        All Rights Reserved.
+    </p>
+</footer>
+
+<button id="topButton" onclick="window.scrollTo({
+    top: 0, behavior: 'smooth'
+})">↑</button>
+
+<!-- JAVASCRIPT -->
+<script>
+const informasi = {
+    profil: {
+        judul: "Tentang Jurusan RPL",
+        isi: `
+        <p>Rekayasa Perangkat Lunak merupakan bidang
+        keahlian yang mempelajari proses pembuatan,
+        pengembangan dan pemeliharaan perangkat lunak.</p>
+        <h3>Tujuan Pembelajaran</h3>
+        <ul>
+            <li>Mengembangkan kemampuan pemrograman.</li>
+            <li>Memahami proses pembuatan aplikasi.</li>
+            <li>Menguasai dasar pengelolaan database.</li>
+            <li>Meningkatkan kreativitas dan pemecahan masalah.</li>
+        </ul>`
+    },
+
+    pemrograman: {
+        judul: "Pembelajaran Pemrograman",
+        isi: `
+        <p>Pemrograman adalah proses menyusun instruksi
+        agar komputer dapat menjalankan tugas tertentu.</p>
+        <h3>Materi Pembelajaran</h3>
+        <ul>
+            <li>HTML: Membuat struktur halaman website.</li>
+            <li>CSS: Mengatur tampilan website.</li>
+            <li>JavaScript: Membuat website interaktif.</li>
+            <li>PHP: Mengembangkan aplikasi sisi server.</li>
+            <li>MySQL: Mengelola database.</li>
+        </ul>
+        <h3>Contoh Hasil</h3>
+        <p>Website sekolah, aplikasi inventaris dan sistem informasi.</p>`
+    },
+
+    desain: {
+        judul: "Pembelajaran Desain",
+        isi: `
+        <p>Desain digital merupakan proses menciptakan
+        tampilan visual yang menarik dan mudah digunakan.</p>
+        <h3>Materi Pembelajaran</h3>
+        <ul>
+            <li>Desain grafis.</li>
+            <li>UI dan UX.</li>
+            <li>Pengolahan gambar.</li>
+            <li>Desain website.</li>
+            <li>Tipografi dan warna.</li>
+        </ul>
+        <h3>Contoh Hasil</h3>
+        <p>Poster, logo, desain aplikasi dan desain antarmuka website.</p>`
+    },
+
+    jaringan: {
+        judul: "Pembelajaran Jaringan",
+        isi: `
+        <p>Jaringan komputer merupakan hubungan antara
+        dua perangkat atau lebih untuk saling bertukar data.</p>
+        <h3>Materi Pembelajaran</h3>
+        <ul>
+            <li>Dasar jaringan komputer.</li>
+            <li>IP Address.</li>
+            <li>LAN dan WAN.</li>
+            <li>Router dan switch.</li>
+            <li>Konfigurasi jaringan.</li>
+        </ul>
+        <h3>Contoh Penerapan</h3>
+        <p>Jaringan laboratorium komputer dan jaringan internet sekolah.</p>`
+    },
+
+    inventaris: {
+        judul: "Aplikasi Inventaris QR",
+        isi: `
+        <p>Aplikasi inventaris QR merupakan contoh sistem
+        digital untuk membantu pencatatan dan pengelolaan
+        barang laboratorium.</p>
+        <h3>Fitur yang dapat dikembangkan</h3>
+        <ul>
+            <li>Pencatatan data barang.</li>
+            <li>Pembuatan QR Code.</li>
+            <li>Pencatatan peminjaman dan pengembalian.</li>
+            <li>Riwayat penggunaan barang.</li>
+            <li>Laporan inventaris.</li>
+        </ul>
+        <h3>Manfaat</h3>
+        <p>Membantu pengelolaan inventaris menjadi lebih
+        teratur dan mudah dipantau.</p>`
+    },
+
+    cbt: {
+        judul: "Portal CBT Online",
+        isi: `
+        <p>Computer Based Test (CBT) merupakan sistem
+        ujian yang menggunakan komputer atau perangkat
+        digital sebagai media pengerjaan soal.</p>
+        <h3>Fitur yang dapat dikembangkan</h3>
+        <ul>
+            <li>Login peserta.</li>
+            <li>Daftar mata pelajaran.</li>
+            <li>Pengerjaan soal pilihan ganda.</li>
+            <li>Penghitungan nilai otomatis.</li>
+            <li>Riwayat hasil ujian.</li>
+        </ul>
+        <h3>Manfaat</h3>
+        <p>Membantu pelaksanaan ujian agar lebih praktis,
+        terorganisasi dan efisien.</p>`
+    },
+
+    katalog: {
+        judul: "E-Katalog Produk PKK",
+        isi: `
+        <p>E-Katalog merupakan media digital untuk
+        menampilkan berbagai produk hasil kreativitas siswa.</p>
+        <h3>Fitur yang dapat dikembangkan</h3>
+        <ul>
+            <li>Galeri foto produk.</li>
+            <li>Nama dan deskripsi produk.</li>
+            <li>Informasi harga.</li>
+            <li>Kategori produk.</li>
+            <li>Informasi pembuat produk.</li>
+        </ul>
+        <h3>Manfaat</h3>
+        <p>Mempermudah promosi dan memperkenalkan
+        produk hasil karya siswa.</p>`
+    },
+
+    praktikum: {
+        judul: "Jadwal Praktikum",
+        isi: `
+        <p>Kegiatan praktikum merupakan kegiatan belajar
+        yang mengutamakan penerapan teori melalui praktik.</p>
+        <h3>Kegiatan Praktikum</h3>
+        <ul>
+            <li>Praktik pemrograman.</li>
+            <li>Pembuatan website.</li>
+            <li>Pengelolaan database.</li>
+            <li>Praktik jaringan komputer.</li>
+        </ul>
+        <p>Jadwal resmi dapat ditambahkan sesuai informasi sekolah.</p>`
+    },
+
+    modul: {
+        judul: "Modul Pembelajaran",
+        isi: `
+        <p>Modul pembelajaran merupakan bahan belajar
+        yang membantu siswa memahami materi secara bertahap.</p>
+        <h3>Materi Modul</h3>
+        <ul>
+            <li>Dasar HTML dan CSS.</li>
+            <li>JavaScript dasar.</li>
+            <li>PHP dan MySQL.</li>
+            <li>Dasar desain UI/UX.</li>
+            <li>Jaringan komputer.</li>
+        </ul>`
+    },
+
+    pkl: {
+        judul: "Informasi PKL",
+        isi: `
+        <p>Praktik Kerja Lapangan merupakan kegiatan
+        pembelajaran bagi siswa untuk memperoleh
+        pengalaman di lingkungan dunia kerja.</p>
+        <h3>Tujuan PKL</h3>
+        <ul>
+            <li>Mengenal lingkungan kerja.</li>
+            <li>Menerapkan ilmu yang telah dipelajari.</li>
+            <li>Melatih tanggung jawab dan kedisiplinan.</li>
+            <li>Meningkatkan keterampilan profesional.</li>
+        </ul>`
+    },
+
+    lsp: {
+        judul: "Uji Kompetensi LSP",
+        isi: `
+        <p>Uji kompetensi merupakan proses penilaian
+        untuk mengetahui kemampuan seseorang
+        berdasarkan standar kompetensi yang berlaku.</p>
+        <h3>Persiapan</h3>
+        <ul>
+            <li>Memahami materi kompetensi.</li>
+            <li>Mempersiapkan portofolio.</li>
+            <li>Melakukan latihan praktik.</li>
+            <li>Memahami prosedur pengujian.</li>
+        </ul>`
+    }
+};
+
+function bukaModal(kunci) {
+    const data = informasi[kunci];
+
+    if (!data) return;
+
+    document.getElementById("modalIsi").innerHTML = `
+        <span class="label">INFORMASI RPL</span>
+        <h2>${data.judul}</h2>
+        ${data.isi}
+    `;
+
+    document.getElementById("modal").style.display = "flex";
+    document.body.style.overflow = "hidden";
+}
+
+function tutupModal() {
+    document.getElementById("modal").style.display = "none";
+    document.body.style.overflow = "auto";
+}
+
+function lihatGambar(gambar) {
+    document.getElementById("gambarBesar").src = gambar.src;
+    document.getElementById("imageModal").style.display = "flex";
+}
+
+document.getElementById("modal").addEventListener("click", function(e) {
+    if (e.target === this) tutupModal();
+});
+
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+        tutupModal();
+        document.getElementById("imageModal").style.display = "none";
+    }
+});
+
+window.addEventListener("scroll", function() {
+    document.getElementById("topButton").style.display =
+        window.scrollY > 300 ? "block" : "none";
+});
+</script>
+
+</body>
+</html>
